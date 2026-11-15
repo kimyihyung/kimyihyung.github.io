@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kim Yihyung · 김이형 — 웹 도구와 3D 공간</title>
+<meta name="description" content="김이형(Kim Yihyung)의 작업 허브. Three.js·WebGL 3D 공간, 업로드 없는 브라우저 도구, React·Vue 앱을 직접 만들어 배포합니다.">
+<meta name="naver-site-verification" content="9e6f86d89e64e754d408b7f8cdc7d341cbb3c634" />
+<link rel="canonical" href="https://kimyihyung.github.io/">
+<meta property="og:site_name" content="Kim Yihyung">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kim Yihyung · 웹 도구와 3D 공간">
+<meta property="og:description" content="Three.js·WebGL 3D 공간, 업로드 없는 브라우저 도구, React·Vue 앱을 직접 만들어 배포합니다.">
+<meta property="og:url" content="https://kimyihyung.github.io/">
+<meta property="og:image" content="https://kimyihyung.github.io/portfolio/assets/img/og/portfolio.jpg">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0b0d'/%3E%3Cpath d='M9 22V10h2.6v5h5.2v-5H19.4v12h-2.6v-4.8h-5.2V22z' fill='%236ef2b0'/%3E%3C/svg%3E">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    --bg: #05070c; --panel: rgba(16, 20, 27, .72); --line: rgba(255,255,255,.10);
+    --ink: #f5f2ea; --muted: #9aa6b6; --mint: #6ef2b0; --gold: #e5b45c;
+  }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink);
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    display: grid; place-items: center; padding: 40px 22px;
+    background-image:
+      radial-gradient(70% 60% at 85% 10%, rgba(127,176,255,.16), transparent 70%),
+      radial-gradient(70% 60% at 10% 92%, rgba(110,242,176,.12), transparent 70%),
+      linear-gradient(#05070c, #0e141d);
+  }
+  main { width: 100%; max-width: 760px; }
+  .eyebrow { font-size: 11px; letter-spacing: .34em; text-transform: uppercase; color: var(--mint); margin: 0 0 22px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); line-height: 1.18; letter-spacing: -.02em; margin: 0 0 16px; font-weight: 650; }
+  h1 span { color: var(--mint); }
+  p.lead { color: var(--muted); font-size: 15.5px; line-height: 1.8; margin: 0 0 12px; max-width: 60ch; }
+  p.lead.en { font-size: 13.5px; color: rgba(154,166,182,.8); margin-bottom: 34px; }
+  .rule { height: 1px; background: var(--line); margin: 0 0 26px; }
+  nav { display: grid; gap: 10px; }
+  @media (min-width: 640px) { nav { grid-template-columns: 1fr 1fr; } }
+  a.card {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px;
+    background: var(--panel); color: var(--ink); text-decoration: none;
+    transition: border-color .2s, transform .2s, background .2s;
+  }
+  a.card:hover, a.card:focus-visible { border-color: rgba(110,242,176,.45); transform: translateY(-1px); }
+  a.card b { font-weight: 600; font-size: 14.5px; letter-spacing: .01em; }
+  a.card span { display: block; margin-top: 5px; font-size: 12px; color: var(--muted); }
+  a.card i { font-style: normal; color: var(--mint); font-size: 15px; }
+  footer { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; font-size: 11.5px; letter-spacing: .12em; color: rgba(154,166,182,.6); text-transform: uppercase; }
+  footer a { color: var(--gold); text-decoration: none; letter-spacing: .08em; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Kim Yihyung · 김이형</p>
+  <h1>브라우저에서 바로 쓰는 도구와,<br><span>들어가서 걷는 3D 공간.</span></h1>
+  <p class="lead">프론트엔드 개발자 김이형입니다. 서버 없이 브라우저 안에서 끝나는 도구와 Three.js·WebGL로 만든 3D 공간을 직접 설계하고 배포합니다.</p>
+  <p class="lead en">Front-end developer building serverless browser tools and Three.js / WebGL worlds — everything here is designed, coded and shipped by one person.</p>
+  <div class="rule"></div>
+  <nav>
+    <a class="card" href="/portfolio/"><b>Portfolio<span>작업 전체 보기 · Start here</span></b><i>→</i></a>
+    <a class="card" href="/portfolio/tools/"><b>Browser Tools<span>업로드 없는 도구 5종</span></b><i>→</i></a>
+    <a class="card" href="/portfolio/3d/"><b>3D Project Portal<span>여덟 개의 포탈, Three.js</span></b><i>→</i></a>
+    <a class="card" href="/portfolio/gallery/"><b>Virtual Gallery<span>네 개의 전시실을 걷는 3D 전시관</span></b><i>→</i></a>
+  </nav>
+  <footer>
+    <span>© 2026 Kim Yihyung</span>
+    <a href="https://github.com/kimyihyung">GitHub</a>
+    <a href="/portfolio/">kimyihyung.github.io/portfolio</a>
+  </footer>
+</main>
+</body>
+</html>
