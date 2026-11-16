@@ -3,3 +3,5 @@ Allow: /
 
 Sitemap: https://kimyihyung.github.io/sitemap.xml
 Sitemap: https://kimyihyung.github.io/portfolio/sitemap.xml
+
+#DaumWebMasterTool:a1da79e99b92f1912b8cfab343c434862337e3f2f694cea13ce573617610d004:CNSJIIGOISrSV2aL3hPlgQ==
